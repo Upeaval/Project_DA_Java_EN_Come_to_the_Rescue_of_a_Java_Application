@@ -27,7 +27,7 @@ public class ServicesSymptoms implements IServicesSymptoms {
      * @param pathFile
      * @return List<String>
      * 
-     * En fonction du path saisit récupère l'entièreté du fichier.txt et les stock dans une List<String>
+     * En fonction du path saisit récupère l'entièreté du fichier.txt et les stock dans une List<String>, symptome.
      */
     @Override
     public List<String> GetSymptoms(Path pathFile) {
@@ -49,7 +49,7 @@ public class ServicesSymptoms implements IServicesSymptoms {
     /** 
      * @return Map<String, Integer>
      * 
-     * Regarde chaque ligne de la List<String>, si cette ligne existe dans la Map<String, Integer> 
+     * Regarde chaque ligne de la List<String> symptome, si cette ligne existe dans la Map<String, Integer>, symptomes, occurences, 
      * ajoute +1 à la Value de la Key sinon ajout la ligne dans la Map<String, Integer>.
      */
     @Override
@@ -71,7 +71,7 @@ public class ServicesSymptoms implements IServicesSymptoms {
     /** 
      * @return TreeMap<String, Integer>
      * 
-     * Récupère la Map<String, Integer> et la class dans l'orde alphabetique.
+     * Récupère la Map<String, Integer>, symptomes, occurences, et la class dans l'orde alphabetique.
      */
     @Override
     public TreeMap<String, Integer> SortSymptoms() {
@@ -80,7 +80,7 @@ public class ServicesSymptoms implements IServicesSymptoms {
     }
 
     /**
-     * Récupère la TreeMap<String, Integer> et ecrit dans le fichier chaque ligne.
+     * Récupère la TreeMap<String, Integer>, symptomes, occurences, et ecrit dans le fichier chaque ligne.
      */
 
     @Override
