@@ -86,7 +86,7 @@ public class ServicesSymptoms implements IServicesSymptoms {
     @Override
     public void WriteSymptoms() {
         try{
-            FileWriter writer = new FileWriter ("C:/Users/Thiba/Desktop/OpenClassrooms/P4/Project_DA_Java_EN_Come_to_the_Rescue_of_a_Java_Application/Project02Eclipse/result.txt");
+            FileWriter writer = new FileWriter ("C:/Users/Thiba/Desktop/OpenClassrooms/Code/Project_DA_Java_EN_Come_to_the_Rescue_of_a_Java_Application/Project02Eclipse/result.txt");
             //Pour chaque ligne de la TreeMap<String, Integer> une ligne est ecrite avec ses valeurs.
             for(String symp : treeSymptoms.keySet()){
                 writer.write(symp + " : " + treeSymptoms.get(symp) + "\n");
